@@ -1,3 +1,6 @@
 def call(repo) {           
-  sh "git branch:'main', url: 'https://github.com/walkertown/ShoppingApp.git'"
+  def branchName = 'main'
+  def urlName = 'https://github.com/walkertown/ShoppingApp.git'
+  def command = 'git branch:' + branchName + ' url:' + urlName
+  sh command
 }
