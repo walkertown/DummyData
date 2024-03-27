@@ -1,3 +1,3 @@
-def call(branch, repo) {           
-  sh "git branch:'${branch}', url: '${repo}'"
+def call(repo) {           
+  sh "git clone ${repo}"
 }
